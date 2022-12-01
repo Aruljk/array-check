@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //  filter method//
+/*        let numbers=[98,3,2,65,76,187];
+        let result=numbers.filter((value)=>{
+            return value>50
+        });
+console.log(result);*/
+
+
+// reduce method // all value +-*
+let numb1=[1,4,5,6,3];
+let res1=numb1.reduce((acc,value1,value2)=>{
+    console.log("value 1 is "+value1);
+    console.log("acc is "+acc);
+    console.log("index is "+value2);
+  return acc + value1;
+},10);
+console.log(res1);
+
+
+//for each // same for loop
+/*let num2=[1,3,4,5,6,9];
+num2.forEach((val)=>{
+console.log(val);
+if(val==3){
+    num2.shift();
+}
+if(val==5){
+    num2.shift();
+}
+});
+console.log(num2);
+// indexof// match na + value ilana -
+var str=[1,2,5,8];
+ var ind=str.indexOf(9);
+console.log(ind);
+
+//push method right to add
+let num3=[22,33,44,55,66];
+let val3=num3.push(77,88);
+console.log(num3);
+
+//pop method  remove value from right
+let num4=[10,20,30,40];
+let val4=num4.pop();
+console.log(num4);*/
+
+//unshit left  la add
+let num5=[1,4,7,9];
+let val5=num5.unshift(1,3,4,5);
+console.log(num5);
+
+//concat method //
+let num6=[1,4,5];
+let val7=[8,7,6];
+console.log(num6.concat(val7));
+
+// every methods// true or false
+
+const num7=[1,2,-3,4,5];
+ const val8=num7.every(use);
+
+function use(item){
+    return item>0;
+}
+
+console.log(val8);
+
+
+
+
+    
+
+
+
+
+    
+    </script>
+</body>
+</html>
